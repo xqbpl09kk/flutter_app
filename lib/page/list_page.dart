@@ -51,7 +51,7 @@ class _ListPage extends State<ListPage> {
                 });
                 print("this tapped !") ;
               },
-          );
+          );sss
         } ,
 //        semanticChildCount: 100,
 //        children: _getListWidgets(),
@@ -94,48 +94,4 @@ class _ItemHeader extends State<ItemHeader>{
     );
   }
 
-}
-
-
-
-class ListItem extends StatefulWidget {
-  final String title;
-  final String abs;
-
-  const ListItem({
-    @required this.title,
-    @required this.abs,
-  }) : super();
-
-  @override
-  State<StatefulWidget> createState() {
-    return _ListItem(title, abs);
-  }
-}
-
-class _ListItem extends State<ListItem> {
-  String title;
-  String abs;
-
-  _ListItem(String title, String abs) : super() {
-    this.title = title;
-    this.abs = abs;
-  }
-
-  onDataChanged(String title, String abs) {
-    setState(() {
-      this.title = title;
-      this.abs = abs;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        Text(title),
-        Text(abs),
-      ],
-    );
-  }
 }
