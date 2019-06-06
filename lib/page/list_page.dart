@@ -51,7 +51,7 @@ class _ListPage extends State<ListPage> {
                 });
                 print("this tapped !") ;
               },
-          );sss
+          );
         } ,
 //        semanticChildCount: 100,
 //        children: _getListWidgets(),
