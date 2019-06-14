@@ -88,3 +88,6 @@ flutter:
   module:
     androidPackage: com.example.fluttermodule
     iosBundleIdentifier: com.example.flutterModule
+
+  assets:
+    - assets/images/

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_module/app/config_page_name.dart';
 import 'package:http/http.dart' as http;
 
 class ListPage extends StatefulWidget {
@@ -48,6 +49,7 @@ class _ListPage extends State<ListPage> {
               ),
               onTap: (){
                 setState(() {
+                  Navigator.of(context).pushNamed(login_page);
                   itemCount -= 20 ;
                 });
                 print("this tapped !") ;
@@ -70,19 +72,6 @@ class _ListPage extends State<ListPage> {
   fetchData() async{
 
   }
-
-
-//  _getListWidgets() {
-//    List<Widget> widgets = [];
-//    for (int i = 0; i < 10000; i++) {
-//      widgets.add(ListItem(title: "title$i", abs: "content$i"));
-//    }
-//    return widgets;
-//  }
-
-
-
-
 }
 
 class RequestService {
