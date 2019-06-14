@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 class ListPage extends StatefulWidget {
   @override
@@ -66,6 +67,10 @@ class _ListPage extends State<ListPage> {
     return regExp.hasMatch(text) ;
   }
 
+  fetchData() async{
+
+  }
+
 
 //  _getListWidgets() {
 //    List<Widget> widgets = [];
@@ -74,7 +79,27 @@ class _ListPage extends State<ListPage> {
 //    }
 //    return widgets;
 //  }
+
+
+
+
 }
+
+class RequestService {
+  Future<Map> post(String url , Map param) async{
+    Map headerMap = await _headerInfo(param) ;
+
+  }
+
+
+  // ignore: missing_return
+  Future <Map> _headerInfo(Map parameter) async{
+  }
+
+}
+
+
+
 
 class ItemHeader extends StatefulWidget{
   @override
